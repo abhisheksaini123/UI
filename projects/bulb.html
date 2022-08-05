@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(249, 250, 250);
+                text-align: center;
+            }
+          
+        </style>
+
+    </head>
+<body>
+<marquee style="border: solid black;"> light on and off</marquee>
+<h2 style="text-align: center;">What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='bolbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<P id="demo"></P>
+<script>
+   let i;
+   for( i=1; i<=127; i++)
+   {document.write(i+" ");}
+   </script>
+<p id="abhi"></p>
+<button type="button" onclick="myfuncation()">cick me</button>
+
+<script>
+function myfuncation( )
+{ document.getElementById("abhi").innerHTML= "my light page"; }
+
+</script>
+</body>
+</html>
